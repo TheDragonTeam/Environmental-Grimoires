@@ -1,13 +1,13 @@
 [
 {
-  "modid": "",
-  "name": "",
-  "description": "",
+  "modid": "eg",
+  "name": "EnvironmentalGrimories",
+  "description": "A mod based around the environmental. Your actions will have impact on your progress",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": [""],
+  "authorList": ["KewaiiGamer", "sokratis12GR", "ImmortalPharaoh7", "C2W_Alex"],
   "credits": "",
   "logoFile": "",
   "screenshots": [],
