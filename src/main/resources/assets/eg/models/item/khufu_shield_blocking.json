@@ -1,0 +1,28 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "eg:items/khufu_shield"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 45, 125, 0 ],
+            "translation": [ 2.5, -2, 0 ],
+            "scale": [ 1.45, 1.45, 1.45 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 45, 125, 0 ],
+            "translation": [ 2.5, -2, 0 ],
+            "scale": [ 1.45, 1.45, 1.45 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 180, -5 ],
+            "translation": [ 4.75, -4, -11 ],
+            "scale": [ 1.70, 1.70, 1.70 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 180, -5 ],
+            "translation": [ 4.75, -4, -11 ],
+            "scale": [ 1.70, 1.70,1.70 ]
+        }
+    }
+}

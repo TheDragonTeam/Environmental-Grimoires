@@ -1,0 +1,45 @@
+# Book Information
+guide.eg.category.introduction=Congratulations, Explorer.
+guide.eg.entry.introduction.intro=Well Done.
+guide.eg.entry.introduction.intro.info=Greetings explorer,\n\nIf you did not already know me, I am Khufu, Pharaoh of the 4th Dynasty, builder of the Great Pyramid of Giza.\nI have hidden my secrets away from those who aren't worthy enough; only those whom seek knowledge shall find this book where lies my secrets. I have hidden knowledge that has the ability to create and destroy worlds.\nHowever, what lies in my book are only ways to seek my knowledge and become powerful, only a true explorer would be able to achieve what I have achieved.\n\nFrom now on, you shall be known as Khufu's apprentice.
+
+#CategoryCombat
+guide.eg.category.combat=Combat
+
+guide.eg.entry.combat.armor=Prototype Armor Set
+guide.eg.entry.combat.armor.info=During my testing, I have found that gold and lapis have strange and durable properties. However, I have only created formulas for prototypes. Apprentice, you should be cautious when near water whilst wearing my prototype armor.
+
+guide.eg.entry.combat.sword=Prototype Sword
+guide.eg.entry.combat.sword.info=Whilst experimenting with tall black teleporting creatures that do not live in our current world, I have found a way to force that teleportation on another mob and put that ability in a sword. However, using that ability will damage the sword. Only use it when necessary. It should work when right-clicking an attacked creature.
+
+guide.eg.entry.combat.bow=Prototype Bow
+guide.eg.entry.combat.bow.info=I have finally managed to shift that force teleport ability into a bow without damaging the weilder. When you hit a mob with the bow, you will teleport to that mob.
+
+guide.eg.entry.combat.shield=Prototype Shield
+guide.eg.entry.combat.shield.info=This time, I discovered a new feature that will hopefully be used, a shield that teleports you right away when it trouble. Just right click.
+
+#CategoryMachinery
+guide.eg.category.machinery=Machinery
+guide.eg.entry.machinery.attackgenerator=Attack Generator
+guide.eg.entry.machinery.attackgenerator.info=I have created a way to create some sort of scientific automatic force that can be stored and be used. Its uses are still unknown to me.
+
+# Status
+status.eg.khufu_shield.tip=Use Right-Click to teleport away
+
+# Items
+item.GuideBook.name=Khufu's Grimoire
+item.eg.khufu_helmet.name=Khufu's Prototype Helmet
+item.eg.khufu_chestplate.name=Khufu's Prototype Chestplate
+item.eg.khufu_skirt.name=Khufu's Prototype Skirt
+item.eg.khufu_sandals.name=Khufu's Prototype Sandals
+item.eg.khufu_shield.name=Khufu's Prototype Shield
+item.eg.khufu_bow.name=Khufu's Prototype Bow
+item.eg.khufu_sword.name=Khufu's Prototype Sword
+item.eg.khufu_fired_arrow.name=Khufu Fired Arrow
+item.eg.golden_string.name=Khufu Golden String
+
+#Blocks
+tile.eg.lavarinogenerator.name=Lavarino Generator
+
+#CreativeTabs
+itemGroup.eg=Environmental Grimoires
