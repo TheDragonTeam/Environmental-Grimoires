@@ -1,4 +1,5 @@
 # Book Information
+<<<<<<< HEAD
 guide.eg.category.introduction=Congratulations, Explorer.
 guide.eg.entry.introduction.intro=Well Done.
 guide.eg.entry.introduction.intro.info=Greetings explorer,\n\nIf you did not already know me, I am Khufu, Pharaoh of the 4th Dynasty, builder of the Great Pyramid of Giza.\nI have hidden my secrets away from those who aren't worthy enough; only those whom seek knowledge shall find this book where lies my secrets. I have hidden knowledge that has the ability to create and destroy worlds.\nHowever, what lies in my book are only ways to seek my knowledge and become powerful, only a true explorer would be able to achieve what I have achieved.\n\nFrom now on, you shall be known as Khufu's apprentice.
@@ -43,3 +44,10 @@ tile.eg.lavarinogenerator.name=Lavarino Generator
 
 #CreativeTabs
 itemGroup.eg=Environmental Grimoires
+=======
+guide.eg.entry.introduction.info=Introduction to the mod
+guide.eg.entry.introduction.intro.info=Sample Text
+guide.eg.category.introduction=How the player got this book
+
+item.GuideBook.name=Khufu's Grimoire
+>>>>>>> origin/master
