@@ -14,6 +14,7 @@ import java.util.List;
 
 import static net.minecraft.init.SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
 import static net.thedragonteam.eg.utils.EnumUtils.addArmorMaterial;
+import static net.thedragonteam.eg.utils.Utilities.getTranslatedText;
 import static net.thedragonteam.eg.utils.Utilities.setName;
 
 /**
@@ -59,7 +60,7 @@ public class KhufuArmor extends ItemArmor {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        tooltip.add(1, "Highly durable armor, just try to keep it away from water");
+        tooltip.add(1, getTranslatedText("tooltip.khufu_armor.line.one.text"));
         super.addInformation(stack, playerIn, tooltip, advanced);
     }
 }

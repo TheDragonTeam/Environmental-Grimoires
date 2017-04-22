@@ -19,6 +19,7 @@ import net.thedragonteam.eg.registry.ModItems;
 import java.util.List;
 
 import static net.minecraft.enchantment.EnchantmentHelper.getEnchantmentLevel;
+import static net.thedragonteam.eg.utils.Utilities.getTranslatedText;
 
 /**
  * Created by sokratis12GR on 4/20/2017.
@@ -89,8 +90,8 @@ public class KhufuBow extends BaseBow {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        tooltip.add(1, "Arrows on impact teleport you to the entity");
-        tooltip.add(2, "While doing damage to the entity too");
+        tooltip.add(1, getTranslatedText("tooltip.khufu_bow.line.one.text"));
+        tooltip.add(2, getTranslatedText("tooltip.khufu_bow.line.two.text"));
         super.addInformation(stack, playerIn, tooltip, advanced);
     }
 }

@@ -15,7 +15,7 @@ public class EnvironmentalGrimoires {
 
     public static final String MODID = "eg";
     public static final String MODNAME = "EnvironmentalGrimoires";
-    public static final String VERSION = "1.11.2-0.0.1";
+    public static final String VERSION = "1.11.2-0.0.3";
 
     public static final String CLIENT_PROXY = "net.thedragonteam.eg.proxy.ClientProxy";
     public static final String SERVER_PROXY = "net.thedragonteam.eg.proxy.ServerProxy";

@@ -5,11 +5,13 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static net.thedragonteam.eg.EnvironmentalGrimoires.MODID;
+import static net.thedragonteam.eg.utils.UtilityType.NAMING;
 import static net.thedragonteam.eg.utils.UtilityType.REGISTRY;
 import static net.thedragonteam.thedragonlib.util.ItemStackUtils.getItem;
 
@@ -31,6 +33,26 @@ public class Utilities {
     @Utility(REGISTRY)
     public static ResourceLocation setResourceLocation(String path) {
         return new ResourceLocation(MODID, path);
+    }
+
+    @Utility(NAMING)
+    public static TextComponentTranslation setTextTranslation(String translationKey, Object... args) {
+        return new TextComponentTranslation(translationKey, args);
+    }
+
+    @Utility(NAMING)
+    public static String getTranslatedText(String translationKey, Object... args) {
+        return setTextTranslation(translationKey, args).getFormattedText();
+    }
+
+    @Utility(NAMING)
+    public static TextComponentString setText(String text) {
+        return new TextComponentString(text);
+    }
+
+    @Utility(NAMING)
+    public static String getText(String text) {
+        return setText(text).getFormattedText();
     }
 
     @SideOnly(Side.CLIENT)

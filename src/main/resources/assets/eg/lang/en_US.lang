@@ -1,5 +1,4 @@
 # Book Information
-<<<<<<< HEAD
 guide.eg.category.introduction=Congratulations, Explorer.
 guide.eg.entry.introduction.intro=Well Done.
 guide.eg.entry.introduction.intro.info=Greetings explorer,\n\nIf you did not already know me, I am Khufu, Pharaoh of the 4th Dynasty, builder of the Great Pyramid of Giza.\nI have hidden my secrets away from those who aren't worthy enough; only those whom seek knowledge shall find this book where lies my secrets. I have hidden knowledge that has the ability to create and destroy worlds.\nHowever, what lies in my book are only ways to seek my knowledge and become powerful, only a true explorer would be able to achieve what I have achieved.\n\nFrom now on, you shall be known as Khufu's apprentice.
@@ -25,7 +24,7 @@ guide.eg.entry.machinery.attackgenerator=Attack Generator
 guide.eg.entry.machinery.attackgenerator.info=I have created a way to create some sort of scientific automatic force that can be stored and be used. Its uses are still unknown to me.
 
 # Status
-status.eg.khufu_shield.tip=Use Right-Click to teleport away
+status.eg.khufu_shield.tip=%sUse Right-Click to teleport away
 
 # Items
 item.GuideBook.name=Khufu's Grimoire
@@ -39,15 +38,20 @@ item.eg.khufu_sword.name=Khufu's Prototype Sword
 item.eg.khufu_fired_arrow.name=Khufu Fired Arrow
 item.eg.golden_string.name=Khufu Golden String
 
-#Blocks
+# ToolTips
+tooltip.khufu_armor.line.one.text=Highly durable armor, just try to keep it away from water
+
+tooltip.khufu_bow.line.one.text=Arrows on impact teleport you to the entity
+tooltip.khufu_bow.line.two.text=While doing damage to the entity too
+
+tooltip.khufu_sword.line.one.text=Right-Click to teleport attacked entities away
+tooltip.khufu_sword.line.two.text=Cost: 50 durability
+
+tooltip.khufu_shield.line.one.text=Right-Click on low health to teleport away
+tooltip.khufu_shield.line.two.text=Cost: 50 durability
+
+# Blocks
 tile.eg.lavarinogenerator.name=Lavarino Generator
 
-#CreativeTabs
+# CreativeTabs
 itemGroup.eg=Environmental Grimoires
-=======
-guide.eg.entry.introduction.info=Introduction to the mod
-guide.eg.entry.introduction.intro.info=Sample Text
-guide.eg.category.introduction=How the player got this book
-
-item.GuideBook.name=Khufu's Grimoire
->>>>>>> origin/master

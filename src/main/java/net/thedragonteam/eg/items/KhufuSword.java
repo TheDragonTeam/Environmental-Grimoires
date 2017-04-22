@@ -16,6 +16,8 @@ import net.thedragonteam.eg.base.BaseSword;
 import java.util.List;
 import java.util.Random;
 
+import static net.thedragonteam.eg.utils.Utilities.getTranslatedText;
+
 /**
  * Created by sokratis12GR on 4/20/2017.
  */
@@ -50,8 +52,8 @@ public class KhufuSword extends BaseSword {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        tooltip.add(1, "Right-Click to teleport attacked entities away");
-        tooltip.add(2, "Cost: 50 durability");
+        tooltip.add(1, getTranslatedText("tooltip.khufu_sword.line.one.text"));
+        tooltip.add(2, getTranslatedText("tooltip.khufu_sword.line.two.text"));
         super.addInformation(stack, playerIn, tooltip, advanced);
     }
 }

@@ -9,6 +9,7 @@ import net.thedragonteam.eg.items.*;
 
 import static java.util.Arrays.setAll;
 import static net.minecraft.inventory.EntityEquipmentSlot.*;
+import static net.minecraftforge.fml.common.Loader.isModLoaded;
 import static net.thedragonteam.eg.utils.Utilities.registerItemRender;
 
 /**
@@ -23,6 +24,8 @@ public class ModItems {
     public static ItemKhufuFiredArrow khufuFiredArrow;
     public static ItemGoldenString goldenString;
     public static KhufuSword khufuSword;
+    //For after ModOff
+    //public static AnkhAmulet ankhAmulet;
 
     public static void initItems() {
         setAll(khufuSet, i -> new KhufuArmor(armorSlots[i]));
@@ -31,6 +34,9 @@ public class ModItems {
         khufuFiredArrow = new ItemKhufuFiredArrow();
         goldenString = new ItemGoldenString();
         khufuSword = new KhufuSword();
+        if (isModLoaded("baubles")) {
+            //ankhAmulet = new AnkhAmulet();
+        }
     }
 
     @SideOnly(Side.CLIENT)
@@ -41,6 +47,9 @@ public class ModItems {
         registerItemRender(khufuFiredArrow);
         registerItemRender(goldenString);
         registerItemRender(khufuSword);
+        if (isModLoaded("baubles")) {
+            //registerItemRender(ankhAmulet);
+        }
     }
 
     @SideOnly(Side.CLIENT)

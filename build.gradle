@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = mc_version + '-' + "0.0.1"
+version = mc_version + '-' + "0.0.3"
 group = package_group
 archivesBaseName = "environmental-grimories"
 

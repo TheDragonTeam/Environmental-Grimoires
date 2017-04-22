@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thedragonteam.eg.entities.EntityKhufuFiredArrow;
-import net.thedragonteam.eg.entities.render.RenderKhufuFiredArrow;
+import net.thedragonteam.eg.entities.render.RenderArrows;
 
 import static net.thedragonteam.eg.EnvironmentalGrimoires.instance;
 import static net.thedragonteam.eg.utils.Utilities.setResourceLocation;
@@ -16,6 +16,7 @@ import static net.thedragonteam.eg.utils.Utilities.setResourceLocation;
 public class ModEntities {
 
     private static final int KHUFU_FIRED_ARROW = 1; //arrow fired from a khufu bow
+    private static final int TORNADO_ARROW = 2; //arrow fired from a Tornado bow
 
     public static void initEntities() {
         EntityRegistry.registerModEntity(setResourceLocation("khufu_fired_arrow"), EntityKhufuFiredArrow.class, "khufu_fired_arrow", KHUFU_FIRED_ARROW, instance, 64, 1, true);
@@ -23,6 +24,6 @@ public class ModEntities {
 
     @SideOnly(Side.CLIENT)
     public static void renderModels() {
-        RenderingRegistry.registerEntityRenderingHandler(EntityKhufuFiredArrow.class, RenderKhufuFiredArrow::new);
+        RenderingRegistry.registerEntityRenderingHandler(EntityKhufuFiredArrow.class, RenderArrows::new);
     }
 }

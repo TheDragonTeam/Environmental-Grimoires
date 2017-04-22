@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -17,6 +17,9 @@ import net.thedragonteam.eg.base.BaseShield;
 
 import java.util.List;
 import java.util.Random;
+
+import static net.thedragonteam.eg.utils.Utilities.getTranslatedText;
+import static net.thedragonteam.eg.utils.Utilities.setTextTranslation;
 
 /**
  * Created by sokratis12GR on 4/18/2017.
@@ -36,7 +39,7 @@ public class KhufuShield extends BaseShield {
                 EntityPlayer player = (EntityPlayer) entityIn;
                 if (player.getHeldItem(EnumHand.OFF_HAND).getItem() == stack.getItem()) {
                     if ((player.getMaxHealth() / 3) >= player.getHealth() && !player.isDead) {
-                        player.sendStatusMessage(new TextComponentTranslation("status.eg.khufu_shield.tip"), true);
+                        player.sendStatusMessage(setTextTranslation("status.eg.khufu_shield.tip", TextFormatting.DARK_RED), true);
                     }
                 }
             }
@@ -85,8 +88,8 @@ public class KhufuShield extends BaseShield {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
-        tooltip.add(1, "Right-Click on low health to teleport away");
-        tooltip.add(2, "Cost: 50 durability");
+        tooltip.add(1, getTranslatedText("tooltip.khufu_shield.line.one.text"));
+        tooltip.add(2, getTranslatedText("tooltip.khufu_shield.line.two.text"));
         super.addInformation(stack, playerIn, tooltip, advanced);
     }
 }

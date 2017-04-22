@@ -2,25 +2,25 @@ package net.thedragonteam.eg.entities.render;
 
 import net.minecraft.client.renderer.entity.RenderArrow;
 import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.util.ResourceLocation;
-import net.thedragonteam.eg.entities.EntityKhufuFiredArrow;
 
 import javax.annotation.Nullable;
 
 /**
  * Created by sokratis12GR on 4/20/2017.
  */
-public class RenderKhufuFiredArrow extends RenderArrow<EntityKhufuFiredArrow> {
+public class RenderArrows extends RenderArrow<EntityArrow> {
 
     public static final ResourceLocation RES_ARROW = new ResourceLocation("textures/entity/projectiles/arrow.png");
 
-    public RenderKhufuFiredArrow(RenderManager renderManagerIn) {
+    public RenderArrows(RenderManager renderManagerIn) {
         super(renderManagerIn);
     }
 
     @Nullable
     @Override
-    protected ResourceLocation getEntityTexture(EntityKhufuFiredArrow entity) {
+    protected ResourceLocation getEntityTexture(EntityArrow entity) {
         return RES_ARROW;
     }
 }
