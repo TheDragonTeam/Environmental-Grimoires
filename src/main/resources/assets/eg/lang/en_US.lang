@@ -51,7 +51,7 @@ tooltip.khufu_shield.line.one.text=Right-Click on low health to teleport away
 tooltip.khufu_shield.line.two.text=Cost: 50 durability
 
 # Blocks
-tile.eg.lavarinogenerator.name=Lavarino Generator
+tile.eg.attackgenerator.name=Attack Generator
 
 # CreativeTabs
 itemGroup.eg=Environmental Grimoires
