@@ -2,6 +2,7 @@ package net.thedragonteam.eg.registry;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import static net.minecraftforge.fml.common.registry.GameRegistry.addShapedRecipe;
 import static net.minecraftforge.oredict.OreDictionary.WILDCARD_VALUE;
@@ -21,8 +22,7 @@ public class ModRecipes {
         addShapedRecipe(getItemStack(ModItems.khufuSet[2]), "   ", "WLW", "WGW", 'G', Blocks.GOLD_BLOCK, 'L', Blocks.LAPIS_BLOCK, 'W', getItemStack(Blocks.WOOL, 1, WILDCARD_VALUE));
         addShapedRecipe(getItemStack(ModItems.khufuSet[3]), "LGL", "L L", "   ", 'G', Items.GOLD_INGOT, 'L', Items.LEATHER);
         addShapedRecipe(getItemStack(ModItems.goldenString, 3, 0), "GSG", "GSG", "SGS", 'G', Items.GOLD_INGOT, 'S', Items.STRING);
-        //  GameRegistry.addShapedRecipe(getItemStack(ModItems.khufuBow, 3), "  L", " BL", "G  ", 'G', Items.GOLD_INGOT, 'B', Blocks.GOLD_BLOCK, 'L', getItemStack(Items.DYE, 1, 4));
-
+        GameRegistry.addShapedRecipe(getItemStack(ModItems.khufuBow, 3), "  L", " BL", "G  ", 'G', Items.GOLD_INGOT, 'B', Blocks.GOLD_BLOCK, 'L', getItemStack(Items.DYE, 1, 4));
         addShapedRecipe(getItemStack(ModBlocks.attackGen, 1, 0), "DID", "IPI", "GIG", 'P', Blocks.PISTON, 'I', Blocks.IRON_BLOCK, 'D', Items.DIAMOND_SWORD, 'G', Items.GOLDEN_SWORD, 'I', Items.IRON_SWORD);
     }
 

@@ -7,7 +7,13 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
     }
 }
+
+plugins {
+    id "com.matthewprenger.cursegradle" version "1.0.8"
+}
+
 apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: "com.matthewprenger.cursegradle"
 
 version = mc_version + '-' + "0.0.3"
 group = package_group
@@ -41,6 +47,7 @@ jar {
 
 dependencies {
 
+compile 'org.jetbrains:annotations:15.0'
 }
 
 processResources {
@@ -80,3 +87,17 @@ processResources {
         exclude 'mcmod.info'
     }
 }
+
+curseforge {
+    apiKey = project.hasProperty('api_token') ? project.api_token : '0'
+    project {
+        id = '265582'
+        changelogType = 'markdown'
+        releaseType = 'release'
+        relations {
+            requiredLibrary 'thedragonlib'
+        }
+    }
+}
+
+

@@ -36,7 +36,7 @@ public class KhufuSword extends BaseSword {
             ItemStack stack = player.getHeldItem(EnumHand.MAIN_HAND);
             if (!player.getCooldownTracker().hasCooldown(stack.getItem())) {
                 if (player.getHeldItem(EnumHand.MAIN_HAND).getItem() == stack.getItem()) {
-                    EntityLivingBase lastAttacker = player.getLastAttacker();
+                    EntityLivingBase lastAttacker = player.getLastAttackedEntity();
                     BlockPos teleportPos = new BlockPos(lastAttacker.posX + (random.nextInt(18 - 10 + 1) + 10), lastAttacker.posY, lastAttacker.posZ + (random.nextInt(18 - 10 + 1) + 10));
                     int cooldownTime = 20 * 15;
                     lastAttacker.setPositionAndUpdate(teleportPos.getX(), teleportPos.getY(), teleportPos.getZ());

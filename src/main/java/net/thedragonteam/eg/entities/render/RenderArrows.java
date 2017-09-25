@@ -5,8 +5,6 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.util.ResourceLocation;
 
-import javax.annotation.Nullable;
-
 /**
  * Created by sokratis12GR on 4/20/2017.
  */
@@ -18,7 +16,6 @@ public class RenderArrows extends RenderArrow<EntityArrow> {
         super(renderManagerIn);
     }
 
-    @Nullable
     @Override
     protected ResourceLocation getEntityTexture(EntityArrow entity) {
         return RES_ARROW;

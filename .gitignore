@@ -20,3 +20,9 @@ build
 # other
 eclipse
 run
+
+local\.properties
+
+classes/
+
+lib/

@@ -6,6 +6,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thedragonteam.eg.armor.KhufuArmor;
 import net.thedragonteam.eg.items.*;
+import net.thedragonteam.eg.utils.Utilities;
+
+import java.util.Arrays;
 
 import static java.util.Arrays.setAll;
 import static net.minecraft.inventory.EntityEquipmentSlot.*;
@@ -25,7 +28,7 @@ public class ModItems {
     public static ItemGoldenString goldenString;
     public static KhufuSword khufuSword;
     //For after ModOff
-    //public static AnkhAmulet ankhAmulet;
+    public static AnkhAmulet ankhAmulet;
 
     public static void initItems() {
         setAll(khufuSet, i -> new KhufuArmor(armorSlots[i]));
@@ -35,7 +38,7 @@ public class ModItems {
         goldenString = new ItemGoldenString();
         khufuSword = new KhufuSword();
         if (isModLoaded("baubles")) {
-            //ankhAmulet = new AnkhAmulet();
+            ankhAmulet = new AnkhAmulet();
         }
     }
 
@@ -48,14 +51,12 @@ public class ModItems {
         registerItemRender(goldenString);
         registerItemRender(khufuSword);
         if (isModLoaded("baubles")) {
-            //registerItemRender(ankhAmulet);
+            registerItemRender(ankhAmulet);
         }
     }
 
     @SideOnly(Side.CLIENT)
     public static void initArmorModel(ItemArmor[] armorSet) {
-        for (ItemArmor armorPiece : armorSet) {
-            registerItemRender(armorPiece);
-        }
+        Arrays.stream(armorSet).forEach(Utilities::registerItemRender);
     }
 }

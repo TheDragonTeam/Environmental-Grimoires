@@ -11,7 +11,6 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.thedragonteam.eg.EnvironmentalGrimoires;
 
-import javax.annotation.Nullable;
 import java.util.concurrent.Callable;
 
 /**
@@ -47,7 +46,6 @@ public class EnvironmentalPower {
     }
 
     public class EnvironmentalPowerStorage implements Capability.IStorage<IEnvironmentalPower> {
-        @Nullable
         @Override
         public NBTBase writeNBT(Capability<IEnvironmentalPower> capability, IEnvironmentalPower instance, EnumFacing side) {
             return new NBTTagInt(instance.getEP());

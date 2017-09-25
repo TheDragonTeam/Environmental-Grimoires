@@ -34,10 +34,8 @@ public class EntityKhufuFiredArrow extends EntityArrow {
 
     @Override
     protected void arrowHit(EntityLivingBase living) {
-        if (!this.world.isRemote) {
-            if (living != shootingEntity) {
-                shootingEntity.setPositionAndUpdate(living.getPosition().getX(), living.getPosition().getY(), living.getPosition().getZ());
-            }
+        if (!this.world.isRemote && living != shootingEntity) {
+            shootingEntity.setPositionAndUpdate(living.getPosition().getX(), living.getPosition().getY(), living.getPosition().getZ());
         }
         super.arrowHit(living);
     }
